@@ -15,7 +15,7 @@
 
     {{ if $pag.HasPrev }}
     <!-- <a href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" aria-label="Previous" class="label-pagination"><span aria-hidden="true">&laquo;</span></a> -->
-        <a href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" aria-label="Previous" class="label-pagination"><i class="fa fa-angle-left fa-lg"></i></a>
+        <a href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}" aria-label="Previous" class="label-pagination"><</a>
     {{ end }}
 
     {{ range $pag.Pagers }}
@@ -24,7 +24,7 @@
 
     {{ if $pag.HasNext }}
     <!-- <a href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" aria-label="Next" class="label-pagination"><span aria-hidden="true">&raquo;</span></a> -->
-        <a href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" aria-label="Next" class="label-pagination"><i class="fa fa-angle-right fa-lg"></i></a>
+        <a href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" aria-label="Next" class="label-pagination">></a>
     {{ end }}
 
     {{ with $pag.Last }}
